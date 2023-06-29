@@ -1,0 +1,93 @@
+.shop-details {
+    padding: 40px 10%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    a {
+        text-decoration: none;
+        color: black;
+        align-items: center;
+        display: flex;
+        text-align: center;
+        align-items: center;
+        gap: 10px;
+        span {
+            font-size: 15px;
+        }
+        &:hover {
+            color: #c70101;
+        }
+    }
+    .content {
+        display: flex;
+        flex: 6;
+        gap: 70px;
+        .content-left {
+            flex: 3;
+            img {
+                width: 450px;
+                height: 450px;
+            }
+        }
+        .content-right {
+            display: flex;
+            flex-direction: column;
+            flex: 3;
+            gap: 40px;
+            font-size: 20px;
+
+            .size {
+                display: flex;
+                align-items: center;
+                gap: 25px;
+
+                .active {
+                    border-color: red;
+                }
+
+                span {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    cursor: pointer;
+                    border: 1px solid gray;
+                    width: 50px;
+                    font-size: 20px;
+                    padding: 3px 10px;
+                    position: relative;
+                }
+            }
+
+            .quantity {
+                font-size: 20px;
+                cursor: pointer;
+                display: flex;
+                align-items: center;
+                gap: 20px;
+
+                span {
+                    color: white;
+                    padding: 3px 40px;
+                    background: black;
+                    border-radius: 10px;
+                }
+            }
+            .add-to-bag {
+                width: 60%;
+                background-color: #c70101;
+                button {
+                    cursor: pointer;
+                    border: none;
+                    background: transparent;
+                    font-size: 20px;
+                    text-transform: uppercase;
+                    padding: 10px 20px;
+                    text-align: center;
+                    width: 100%;
+                    font-weight: bold;
+                    color: white;
+                }
+            }
+        }
+    }
+}

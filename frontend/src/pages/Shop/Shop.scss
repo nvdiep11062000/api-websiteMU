@@ -1,0 +1,128 @@
+.shop {
+    .banner-shop {
+        background-image: url(https://store.manutd.com/content/ws/all/801efd82-c856-4b46-9da9-992e5d107c10__3200X1224.png);
+        height: 450px;
+        background-size: cover;
+    }
+    .content-shop {
+        display: flex;
+        flex: 7;
+        padding-top: 40px;
+        .shop-filter {
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+            padding-left: 20px;
+            border-right: 1px solid gray;
+
+            .kit-type {
+                padding: 10px 0;
+                border-bottom: 1px solid gray;
+                h3 {
+                    color: #c41a20;
+                }
+                .option {
+                    margin-top: 5px;
+                    display: flex;
+                    gap: 15px;
+                    flex-direction: column;
+                    cursor: pointer;
+
+                    span {
+                        padding: 5px 10px;
+                        &:hover {
+                            background: #c41a20;
+                            color: white;
+                        }
+                    }
+                }
+            }
+            .popular-collection {
+                padding: 10px 0;
+                gap: 10px;
+                display: flex;
+                flex-direction: column;
+
+                h3 {
+                    color: #c41a20;
+                }
+                span {
+                    cursor: pointer;
+                    padding: 5px 10px;
+                    &:hover {
+                        background: #c41a20;
+                        color: white;
+                    }
+                }
+            }
+            .category {
+                padding: 10px 0;
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                border-bottom: 1px solid gray;
+                h3 {
+                    color: #c41a20;
+                }
+                span {
+                    cursor: pointer;
+                    padding: 5px 10px;
+                    &:hover {
+                        background: #c41a20;
+                        color: white;
+                    }
+                }
+            }
+        }
+        .shop-items {
+            padding: 20px 20px;
+            flex: 6;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+            row-gap: 60px;
+            column-gap: 30px;
+
+            a {
+                color: black;
+                text-decoration: none;
+                .card-item {
+                    cursor: pointer;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    text-align: center;
+                    .card-img {
+                        width: 250px;
+                        height: 250px;
+                    }
+                    .card-content {
+                        margin-top: 30px;
+                        h3 {
+                            font-size: 15px;
+                            margin-bottom: 20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .button-more {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 20px 0;
+        button {
+            padding: 10px 20px;
+            cursor: pointer;
+            text-transform: uppercase;
+            border: none;
+            font-weight: bold;
+            background: gray;
+            &:hover {
+                background: #c41a20;
+                color: white;
+            }
+        }
+    }
+}

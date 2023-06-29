@@ -1,0 +1,174 @@
+.home {
+    &__banner {
+        img {
+            height: 650px;
+            opacity: 1;
+        }
+    }
+
+    &__news {
+        padding: 50px 10%;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 400px 400px;
+        column-gap: 30px;
+        row-gap: 30px;
+
+        .home__new {
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            cursor: pointer;
+            display: flex;
+            flex-direction: column;
+
+            .new__img {
+                width: 100%;
+                height: 170px;
+                flex-shrink: 0;
+                img {
+                    height: 100%;
+                }
+            }
+
+            .content {
+                flex: 1;
+                margin: 0 20px;
+                display: flex;
+                flex-direction: column;
+
+                .content__top {
+                    display: flex;
+                    flex-direction: column;
+                    h2 {
+                        font-size: 18px;
+                        margin-bottom: 10px;
+                    }
+                    p {
+                        font-size: 15px;
+                    }
+                }
+                .content__bottom {
+                    margin-top: auto;
+                    color: gray;
+                    display: flex;
+                    justify-content: space-between;
+                    a {
+                        font-size: 25px;
+                    }
+                }
+            }
+
+            img:hover {
+                transform: scale(1.05);
+                transition: 0.5s ease-in-out;
+            }
+        }
+        .big_new1 {
+            display: flex;
+            grid-column: 1/3;
+            grid-row: 1/2;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            cursor: pointer;
+
+            img {
+                width: 100%;
+                height: 100%;
+            }
+
+            .content {
+                margin: 20px 20px 0 20px;
+                display: flex;
+                flex-direction: column;
+
+                h2 {
+                    margin-bottom: 15px;
+                }
+                .content__bottom {
+                    align-items: center;
+                    display: flex;
+                    justify-content: space-between;
+                    margin-top: auto;
+                    color: gray;
+
+                    a {
+                        font-size: 25px;
+                    }
+                }
+            }
+        }
+        .big_new2 {
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            cursor: pointer;
+            grid-column: 3/5;
+            grid-row: 1/2;
+            position: relative;
+            background-size: cover;
+            background-position: center;
+            object-fit: cover;
+            height: 100%;
+            background-image: url(https://media.bleacherreport.com/image/upload/c_fill,g_faces,w_3800,h_2000,q_95/v1677341359/xcoyptvjuk8gf3vywgs7.jpg);
+
+            h2 {
+                margin-left: 20px;
+                position: absolute;
+                bottom: 10%;
+                color: white;
+                font-size: 30px;
+                word-wrap: break-word;
+                width: 400px;
+                z-index: 100;
+            }
+
+            .mu__gardient {
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                overflow: hidden;
+                bottom: 0;
+                opacity: 0.4;
+                background: #3d3030;
+            }
+
+            .content__bottom {
+                width: 100%;
+                position: absolute;
+                bottom: 0;
+                padding: 0 20px;
+                color: white;
+                display: flex;
+                font-size: 15px;
+                justify-content: space-between;
+
+                a {
+                    font-size: 25px;
+                }
+            }
+        }
+    }
+    &__matches {
+        background: #f2f2f2;
+
+        h1 {
+            padding-top: 50px;
+            text-align: center;
+        }
+        .card_matches {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            height: 500px;
+            gap: 35px;
+            padding: 0 50px;
+        }
+    }
+    .banner-bottom {
+        background-image: url(https://scontent.fhan15-2.fna.fbcdn.net/v/t39.30808-6/350288233_309046771445948_5839963402673742184_n.jpg?_nc_cat=1&ccb=1-7&_nc_sid=e3f864&_nc_ohc=uWUAkyHj6IEAX8evVk9&_nc_ht=scontent.fhan15-2.fna&oh=00_AfBeBZTVWtXh5MLYtZfNo4NDRhCpx6-CIWbubg6imD264A&oe=6478B62A);
+        width: 100%;
+        background-size: cover;
+        height: 850px;
+    }
+}

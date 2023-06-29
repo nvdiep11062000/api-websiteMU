@@ -1,0 +1,116 @@
+.stadium {
+    position: relative;
+    background-image: url(https://assets.manutd.com/AssetPicker/images/0/0/12/97/811443/MU_LCFC_EUN-1051568818092964_xlarge.jpg);
+    height: 550px;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    h1 {
+        position: absolute;
+        bottom: 20px;
+        left: 10%;
+        font-size: 60px;
+        text-transform: uppercase;
+        color: white;
+    }
+}
+.describe {
+    margin-top: 50px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    p,
+    span {
+        text-align: center;
+        width: 600px;
+        font-size: 20px;
+        color: gray;
+        margin-bottom: 30px;
+    }
+}
+.tour {
+    padding: 30px 10%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 350px 350px 350px;
+    gap: 30px;
+    cursor: pointer;
+
+    .tour-card {
+        background-size: cover;
+        border-radius: 10px;
+        position: relative;
+        overflow: hidden;
+
+        .gardient {
+            background: linear-gradient(185deg, rgba(0, 0, 0, 0) 20%, rgba(0, 0, 0, 0.9) 80%);
+            height: 70%;
+            z-index: 98;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            overflow: hidden;
+            bottom: 0;
+
+            h1 {
+                position: absolute;
+                bottom: 80px;
+                color: white;
+                margin-left: 20px;
+                text-transform: uppercase;
+
+                &::before {
+                    border-top: 2px solid #c81617;
+                    position: absolute;
+                    width: 61px;
+                    content: '';
+                    top: -16px;
+                }
+            }
+            p {
+                position: absolute;
+                bottom: 45px;
+                color: white;
+                margin-left: 20px;
+                font-size: 15px;
+            }
+            span {
+                position: absolute;
+                bottom: 10px;
+                margin-left: 20px;
+                text-transform: uppercase;
+                color: white;
+                font-size: 15px;
+                display: flex;
+                gap: 10px;
+                align-items: center;
+                cursor: pointer;
+                font-weight: bold;
+
+                &:hover {
+                    color: red;
+                }
+            }
+        }
+    }
+    .tour-card:first-child {
+        background-image: url(https://eu-assets.simpleview-europe.com/manchester2016/imageresizer/?image=%2Fdmsimgs%2FTunnel_Group_1_1342543586.jpg&action=ProductDetailFullWidth2);
+    }
+    .tour-card:nth-child(2) {
+        background-image: url(https://live.staticflickr.com/7126/7485845248_d6a4303317_b.jpg);
+    }
+    .tour-card:nth-child(3) {
+        background-image: url(https://pbs.twimg.com/media/DO1bYcbWsAA9On_.jpg);
+    }
+    .tour-card:nth-child(4) {
+        background-image: url(https://assets.manutd.com/AssetPicker/images/0/0/13/153/891278/20190924_MUFC_Unmatched_shoot_807.CR2.p1589365995607_medium.jpg);
+    }
+    .tour-card:nth-child(5) {
+        background-image: url(https://a.espncdn.com/photo/2021/0404/r836003_1296x729_16-9.jpg);
+    }
+    .tour-card:nth-child(6) {
+        background-image: url(https://c8.alamy.com/comp/MMR7NT/manchester-united-fans-outside-the-ground-before-the-premier-league-match-at-old-trafford-manchester-MMR7NT.jpg);
+    }
+}
