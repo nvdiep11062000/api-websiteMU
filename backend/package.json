@@ -10,7 +10,8 @@
         "test": "echo \"Error: no test specified\" && exit 1",
         "server": "node server.js",
         "start": "nodemon server.js",
-        "build": "npm i"
+        "build": "npm i",
+        "vercel-build": "echo hello"
     },
     "author": "",
     "license": "ISC",
